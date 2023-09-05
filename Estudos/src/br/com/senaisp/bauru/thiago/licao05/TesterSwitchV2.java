@@ -1,5 +1,10 @@
 package br.com.senaisp.bauru.thiago.licao05;
-
+/**
+ * Objetivo: Testar a ultilização dos metos switch case
+ * 
+ * @author Thiago
+ * 
+ */
 import java.util.Scanner;
 
 public class TesterSwitchV2 {
