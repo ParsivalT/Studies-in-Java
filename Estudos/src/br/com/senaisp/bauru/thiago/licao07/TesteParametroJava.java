@@ -1,29 +1,26 @@
 package br.com.senaisp.thiago.licao07;
+
 /**
  * 
+ * Objetivo: Testar argumentos passados via linha de comando para a classe.
+ *
  * @author Thiago
  *
  */
-public class TesteParametrosVariaveis {
+public class TesteParametroJava {
 
 	public static void main(String[] args) {
-		String[] frutas = {"Pera", "Uvas", "Laranja", "Banana"};
-		listarValoresV1(frutas);
-		System.out.println("-------");
-		listarValoresV2("Pera", "Maça");
+		/*
+		 * Listando os argumentos passados atraves da linha de comando atraves do
+		 * laço de repetição foreatch.
+		 */
+
+		for (String item : args) {
+			System.out.println(item);
+			}
+		
+		System.out.println("-----------X----------");
+		System.out.println("Fim do programa");
 	}
-	
-	// Função responsavel por listar os valores de um vetor.
-	public static void listarValoresV1(String[] par) {
-		for(String it : par) {
-			System.out.println(it);
-		}
-	}
-	
-	public static void listarValoresV2(String ... par) {
-		for(String it : par) {
-			System.out.println(it);
-		}
-	}
-	
+
 }
